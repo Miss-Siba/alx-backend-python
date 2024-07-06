@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
-'''Task 12's module.
-'''
+"""Defines Type checking"""
+from typing import List, Tuple
 
 
-from typing import List, Tuple, Union
-
-
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
-    ''' Uses zoom array function. '''
-    zoomed_in: List[int] = [
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """Type Checking Exercise"""
+    zoomed_in: List = [
         item for item in lst
-        for _ in range(factor)
+        for i in range(int(factor))
     ]
     return zoomed_in
 
